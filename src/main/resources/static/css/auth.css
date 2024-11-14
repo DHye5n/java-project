@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #c9d6ff linear-gradient(90deg, #e2e2e2, #c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    /*position: relative;*/
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+    border-radius: 30px;
+    width: 60%;
+    max-width: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-box {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px 0 0 30px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.find-id-pwd {
+    font-size: 10px;
+    margin: 20px 0;
+}
+
+.find-id-pwd a {
+    cursor: pointer;
+    color: #888;
+}
+
+.input-box {
+    position: relative;
+    margin: 12px 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box p {
+    position: absolute;
+    top: 90%; /* p 요소가 input 아래에 표시되도록 위치 설정 */
+    left: 20px;
+    margin-top: 5px; /* p와 input 사이의 간격 조정 */
+    font-size: 10px; /* 원하는 크기 설정 */
+    color: red; /* 경고 메시지 색상 */
+    /*display: none; !* 기본적으로 숨김 처리 *!*/
+}
+
+.check-input-box {
+    position: relative;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+    justify-content: center;
+}
+
+.check-input-box p {
+    position: absolute;
+    top: 90%; /* p 요소가 input 아래에 표시되도록 위치 설정 */
+    left: 20px;
+    margin-top: 5px; /* p와 input 사이의 간격 조정 */
+    font-size: 10px; /* 원하는 크기 설정 */
+    color: red; /* 경고 메시지 색상 */
+    /*display: none; !* 기본적으로 숨김 처리 *!*/
+}
+
+
+.input-box input {
+    width: 100%;
+    padding: 10px 50px 10px 20px;
+    background: #eee;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+}
+
+.check-input-box input {
+    width: 100%;
+    padding: 10px 50px 10px 20px;
+    background: #eee;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+}
+
+.input-box input::placeholder {
+    color: #888;
+    font-weight: 400;
+}
+
+.check-input-box input::placeholder {
+    color: #888;
+    font-weight: 400;
+}
+
+.input-box i {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+}
+
+.check-input-box i {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+}
+
+.form-btn {
+    position: relative;
+    width: 50%;
+    height: 48px;
+    background-color: #7494ec;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+
+.check-btn {
+    flex-basis: 15%;
+    flex-shrink: 1;
+    padding: 0 8px;
+    background-color: #7494ec;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 12px;
+    width: 100%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgot-link { margin: -15px 0 15px; }
+
+.forgot-link a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icons { margin: 20px 0; }
+
+.social-icons a .icons {
+    width: 32px;
+    height: 32px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.toggle-box, .toggle-panel {
+    margin: 0;
+    padding: 0;
+}
+
+.toggle-box {
+    width: 30%;
+}
+
+.toggle-panel {
+    right: -12px;
+    border-radius: 0 30px 30px 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #7494ec;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-panel a {
+    color: #fff;
+}
+
+.toggle-panel .move-button {
+    width: 50%;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    background: transparent;
+    margin-top: 30px;
+}
+
+
+
+

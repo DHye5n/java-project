@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+      layout:decorate="~{layouts/lo-auth}">
+
+<th:block layout:fragment="content">
+
+    <div class="container" id="container">
+        <div class="form-box sign-up">
+            <form id="form" method="post">
+                <h1>회원가입</h1>
+
+                <div class="check-input-box">
+                        <input type="text" id="email" name="email" placeholder="email" required>
+                        <i class="fa-solid fa-envelope"></i>
+                        <button id="email-check-btn" type="button" class="check-btn">확인</button>
+                        <p id="email-check-message" class="alert-desc d-none">이미 사용 중인 이메일입니다.</p>
+                </div>
+
+                <div class="check-input-box">
+                    <input type="text" id="verification-code" name="verification-code" placeholder="verify code" required>
+                    <i class="fa-solid fa-envelope"></i>
+                    <button id="verify-code-btn" type="button" class="check-btn">확인</button>
+                    <p id="verification-code-message" class="alert-desc d-none">인증 코드가 일치하지 않습니다.</p>
+                </div>
+
+                <div class="check-input-box">
+                    <input type="text" id="username" name="username" placeholder="username" required>
+                    <i class="fa-solid fa-user"></i>
+                    <button id="id-check-btn" type="button" class="check-btn">확인</button>
+                    <p id="id-check-message" class="alert-desc d-none">이미 사용 중인 아이디입니다.</p>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="password" name="password" placeholder="password" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <p id="password-check-message" class="alert-desc d-none">비밀번호는 8~20자, 대,소문자 하나 이상 포함해야 합니다.</p>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="password-check" name="passwordCheck" placeholder="password-check" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <p id="password-check-message-confirm" class="alert-desc d-none">비밀번호가 일치하지 않습니다.</p>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" id="phone" name="phone" placeholder="phone" required>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="check-input-box">
+                    <input type="text" id="zonecode" name="zonecode" placeholder="zonecode" required>
+                    <i class="fa-solid fa-house"></i>
+                    <button id="post-find-button" type="button" class="check-btn">주소</button>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" id="address" name="address" placeholder="address" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" id="address-detail" name="addressDetail" placeholder="address-detail" required>
+                </div>
+
+                <button id="join-btn" type="button" class="form-btn">회원가입</button>
+            </form>
+        </div>
+
+        <div class="toggle-box">
+            <div class="toggle-panel">
+                <h1>Welcome Back!</h1>
+                <p>Already have an Account?</p>
+                <button class="move-button"><a href="/auth/sign-in">로그인</a></button>
+            </div>
+        </div>
+
+    </div>
+
+</th:block>
+</html>
